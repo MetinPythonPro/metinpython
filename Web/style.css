@@ -1,12 +1,104 @@
 body {
-    font-family: Arial, sans-serif; /* Yazı tipi ailesi */
+    font-family: Arial, 'Inter'; /* Yazı tipi ailesi */
     font-size: 20px; /* <p></p> etiketindeki ana yazının boyutu */
-    background-color: #0A084B; /* Web sayfasının arka plan rengi */
-    color: 	#FF5900; /* Metin rengi */
+    background-color: #191970; /* Web sayfasının arka plan rengi */
+    color: 	#ABFFFF; /* Metin rengi */
 }
 
 h1 {
-    color: 	#00FEFC; /* Başlık rengi */
+    color: 	#FF5000; /* Başlık rengi */
     font-size: 50px; /* Başlık yazı tipi boyutu */
-    font-family: Georgia, serif; /* Başlıkta kullanılan yazı tipi ailesi */
+    font-family: Georgia, 'Inter'; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+
+h2 {
+    color: 	#C3A456; /* Başlık rengi */
+    font-size: 37px; /* Başlık yazı tipi boyutu */
+    font-family: Georgia, 'Inter'; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+
+h3 {
+    color: 	#C3A456; /* Başlık rengi */
+    font-size: 37px; /* Başlık yazı tipi boyutu */
+    font-family: Georgia, 'Inter'; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+
+h4 {
+    color: 	#C3A456; /* Başlık rengi */
+    font-size: 37px; /* Başlık yazı tipi boyutu */
+    font-family: Georgia, 'Inter'; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+
+h5 {
+    color: 	#C3A456; /* Başlık rengi */
+    font-size: 37px; /* Başlık yazı tipi boyutu */
+    font-family: Georgia, 'Inter'; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+
+h6 {
+    color: 	#C3A456; /* Başlık rengi */
+    font-size: 37px; /* Başlık yazı tipi boyutu */
+    font-family: Georgia, 'Inter'; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+
+h7 {
+    color: 	#C3A456; /* Başlık rengi */
+    font-size: 37px; /* Başlık yazı tipi boyutu */
+    font-family: Georgia, 'Inter'; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+@keyframes color-change {
+    0% {
+        color: red;
+    }
+  
+    10% {
+        color: #ffa500;
+    }
+  
+    20% {
+        color: yellow;
+    }
+    
+    30% {
+        color: greenyellow;
+    }
+    40% {
+        color: cyan;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    60% {
+        color: purple;
+    }
+
+    70% {
+        color: blue;
+    }
+
+    80% {
+        color: cyan;
+    }
+
+    90% {
+        color: greenyellow;
+    }
+
+    93% {
+        color: yellow;
+    }
+
+    96% {
+        color: orange;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+h1:hover {
+    animation: color-change 3s infinite;
 }
