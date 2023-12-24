@@ -52,21 +52,21 @@ def submit_form():
     # Veri toplama için değişkenleri tanımlayın
     name = request.form['name']
     email = request.form['email']
-    adres = request.form['address']
+    adres = request.form['adres']
     date = request.form['date']
-    with open('form.txt', 'a',) as f:
-        f.write(name + 'name')
-    with open('form.txt', 'b',) as g:
-        g.write(email + 'email')
-    with open('form.txt', 'c',) as h:
-        h.write(adres + 'address')
-    with open('form.txt', 'd',) as i:
-        i.write(date + 'date')
+    with open('form.txt', 'a') as a:
+        a.write('Name: ' + name + ', ')
+    with open('form.txt', 'a') as b:
+        b.write('Email: ' + email + ', ')
+    with open('form.txt', 'a') as c:
+        c.write('Address: ' + adres + ', ')
+    with open('form.txt', 'a') as d:
+        d.write('Date: ' + date + '.')
     return render_template('form_result.html', 
                            # Değişkenleri buraya yerleştirin
                            name=name,
                            email=email,
-                           address=adres,
+                           adres=adres,
                            date=date
                            )
 
