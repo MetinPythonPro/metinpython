@@ -4,6 +4,8 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
+a = 0
+
 def result_calculate(size, lights, device):
     # Elektrikli cihazların enerji tüketimini hesaplamaya olanak tanıyan değişkenler
     home_coef = 100
@@ -54,7 +56,8 @@ def submit_form():
     email = request.form['email']
     adres = request.form['adres']
     date = request.form['date']
-    with open('form.txt', 'a') as a:
+    
+    with open('form.txt', 'x') as a:
         a.write('Name: ' + name + ', ')
     with open('form.txt', 'a') as b:
         b.write('Email: ' + email + ', ')
